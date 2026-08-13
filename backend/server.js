@@ -24,7 +24,9 @@ app.get("/", (req, res) => {
 });
 
 // Authentication routes
-app.use("/api/auth", require("./src/routes/auth.route"));
+app.use("/api/auth", require("./src/routes/auth.route"){
+    message: "Authentication routes are working"
+});
 
 // Blog routes
 app.use("/api/blogs", require("./src/routes/blog.route"));
