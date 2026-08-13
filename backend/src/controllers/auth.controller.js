@@ -4,7 +4,6 @@ const jwt = require("jsonwebtoken");
 
 // REGISTER
 const registerUser = async (req, res) => {
-    message:"auth api is running successfully"
     try {
         const { name, email, password } = req.body;
 
